@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Service</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mobile Mechanic Services</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/order">Order Now</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Order a Service</h2>
+        <form action="/order" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="service">Choose a service:</label>
+            <select id="service" name="service" required>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Battery Replacement">Battery Replacement</option>
+                <option value="Tire Change">Tire Change</option>
+                <option value="Brake Replacement">Brake Replacement</option>
+                <option value="Engine Diagnostics">Engine Diagnostics</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mobile Mechanic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
